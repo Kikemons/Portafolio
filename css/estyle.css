@@ -10,6 +10,7 @@
 .padre {
   display: flex;
   flex-flow: column nowrap;
+  height: 650px;
 }
 
 .menu {
@@ -35,6 +36,11 @@ a {
   font-size: 25px;
   text-decoration: none;
 }
+i{
+  font-size: 19px;
+  margin: 8px;
+  text-align: center;
+}
 
 .menu_navegacion {
   display: flex;
@@ -44,7 +50,7 @@ a {
 }
 
 .padre {
-  background: url(6074593.jpg);
+  background: url(fondo2.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: contain;
@@ -57,7 +63,7 @@ a {
 }
 
 .imagen {
-  width: 45%;
+  width: 42%;
   padding: 30px 40px;
   text-align: center;
 }
@@ -67,15 +73,23 @@ a {
 
 .descripcion {
   text-align: justify;
-  padding: 30px 40px 20px 20px;
+  margin-left: 10px;
+  padding: 90px 40px 20px 20px;
   width: 55%;
 }
 
 h1{
   font-size: 40px;
-  color: white;
+  color: rgb(15, 15, 15);
+  padding-bottom: 20px;
 }
 p {
-  color: white;
+  background: rgba(252, 246, 246, 0.4);
+  color: rgb(24, 24, 24);
+  padding: 13px;
   font-size: 25px;
+}
+
+a:hover{
+  color: rgb(29, 212, 136);
 }
