@@ -26,7 +26,7 @@
 .logo a {
   font-size: 30px;
   color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -36,7 +36,7 @@ a {
   font-size: 25px;
   text-decoration: none;
 }
-i{
+i {
   font-size: 19px;
   margin: 8px;
   text-align: center;
@@ -46,58 +46,52 @@ i{
   display: flex;
   flex: 1 1 auto;
   justify-content: end;
-  
 }
 
 .padre {
-  background: url(fondo1.jpg);
+  background: url(fondo5.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: contain;
 }
-  
-  .section {
-    display: flex;
-    flex-flow: column nowrap;
-    display: block;
-    height: max-content;
-    width: auto;
-  }
-  
-  
-  
-  a:hover{
-    color: rgb(29, 212, 136);
-  }
 
-  .proyectos{
-    margin: 70px 20px 10px 20px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-    height: auto;
-  
-  }
-  .proyecto{
-    justify-content: center;
-    width: 300px;
-    margin: 5px;
-  }
+a:hover {
+  color: rgb(29, 212, 136);
+}
 
-  .h1{
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  h1{
-    font-size: 50px;
-  }
-  p{
-    text-align: justify;
-  }
-  .img{
-    margin-left: 84px;
-  }
- 
+.titulo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 24px;
+}
+.redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin: 23px 20px 10px 70px;
+  width: 650px;
+}
+
+.red{
+  padding: 30px;
+}
+
+.red a i {
+  color: rgb(31, 124, 128);
+  font-size: 100px;
+}
+h3{
+  text-align: center;
+}
+.red a h3{
+  font-size: 20px;
+  color: black;
+}
+
+.red a i:hover{
+  color: rgb(110, 100, 100);
+}
