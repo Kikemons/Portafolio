@@ -10,7 +10,6 @@
 .padre {
   display: flex;
   flex-flow: column nowrap;
-  height: 650px;
 }
 
 .menu {
@@ -26,7 +25,7 @@
 .logo a {
   font-size: 30px;
   color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -36,7 +35,7 @@ a {
   font-size: 25px;
   text-decoration: none;
 }
-i{
+i {
   font-size: 19px;
   margin: 8px;
   text-align: center;
@@ -46,26 +45,33 @@ i{
   display: flex;
   flex: 1 1 auto;
   justify-content: end;
-  
+  flex-wrap: nowrap;
+}
+
+.menucel{
+  display: none;
 }
 
 .padre {
   background: url(fondo2.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: contain;
+  height: calc(100vh);
 }
 
 .section {
   display: flex;
-  height: max-content;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
   width: auto;
+
 }
 
 .imagen {
   width: 42%;
   padding: 30px 40px;
-  text-align: center;
+  justify-content: center;
 }
 .imagen img {
   width: 100%;
@@ -74,11 +80,11 @@ i{
 .descripcion {
   text-align: justify;
   margin-left: 10px;
-  padding: 90px 40px 20px 20px;
+  padding: 70px 40px 20px 20px;
   width: 55%;
 }
 
-h1{
+h1 {
   font-size: 40px;
   color: rgb(15, 15, 15);
   padding-bottom: 20px;
@@ -90,6 +96,121 @@ p {
   font-size: 25px;
 }
 
-a:hover{
+a:hover {
   color: rgb(29, 212, 136);
+}
+
+#check-menu{
+  display: none;
+}
+
+
+@media Screen and (max-width:1190px){
+  .imagen{
+   margin-top: 75px;
+  }
+
+}
+
+
+
+
+
+@media Screen and (max-width: 1034px) {
+  .padre {
+    height: 100vh;
+  }
+
+  .imagen {
+    margin-top: 140px;
+    padding: 0px 0px 0px 10px;
+  }
+
+  h1{
+    font-size: 40px;
+  }
+
+  p{
+    font-size: 25px;
+  }
+}
+
+
+
+
+
+
+@media Screen and (max-width: 792px) {
+  .padre {
+   height: 100%;
+   
+  }
+  .menu{
+    padding: 0;
+  }
+  .menu_navegacion{
+    position: fixed;
+    display: flex;
+   flex-direction: column;
+    justify-content: flex-start;
+    background: gray;
+    width: 60%;
+    height: 100vh;
+    left: 0;
+    margin-left: -60%;
+    transition: all .5s;
+  }
+
+  .menu_navegacion i{
+    padding: 10px;
+    font-size: 30px;
+  }
+ 
+  .menucel{
+    display: block;
+    color: white;
+    cursor: pointer;
+
+  }
+
+
+
+  i{
+    font-size: 40px;
+    margin-right: 40px;
+  }
+
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descripcion {
+    width: 80%;
+    padding: 20px 40px 20px 20px;
+  }
+
+  .imagen {
+    margin-top: 20px;
+    width: 60%;
+    padding: 0px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 60px ;
+  }
+  p {
+    text-align: justif;
+    font-size: 40px ;
+  }
+
+
+ 
+    
+ #check-menu:checked~.menu_navegacion{
+
+  margin: 0;
+ }
+
 }

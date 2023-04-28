@@ -14,7 +14,7 @@
 }
 
 .menu {
-  background: rgba(10, 10, 10, 0.4);
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-flow: row nowrap;
   padding: 10px;
