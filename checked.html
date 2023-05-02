@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <nav>
+            <label for="menu-toggle" class="menucel">
+              <i class="fa-solid fa-bars"></i>
+              <p>
+                Lorem ipsum 
+              </p>
+            </label>
+            <input type="checkbox" id="menu-toggle">
+
+              <!-- <ul class="menu_navegacion">
+               <li><a href="inicio.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+               <li><a href="Proyectos.html"><i class="fa-solid fa-gears"></i></i>Proyectos</a></li>
+               <li><a href="servicios.html"><i class="fa-solid fa-comment"></i>Servicios</a></li>
+               <li><a href="contacto.html"><i class="fa-solid fa-phone"></i>Contacto</a></li>
+              </ul> -->
+
+              <p class="o">Lorem, ipsum dolor.</p>
+          </nav>
+
+
+    <style>
+        label {
+          cursor: pointer;
+        }
+
+        .menu_navegacion{
+            display: none;
+        }
+        #menu-toggle:checked ~ .menu_navegacion{
+            display: block;
+        }
+
+        #menu-toggle:checked ~ .o{
+            color: chartreuse;
+        }
+      </style>
+</body>
+</html>

@@ -95,3 +95,68 @@ h3{
 .red a i:hover{
   color: rgb(110, 100, 100);
 }
+.cel{
+  display: none;
+}
+
+#menu-cel{
+  display: none;
+}
+
+@media Screen and (max-width: 792px) {
+  .padre {
+    height: 100%;
+  }
+  .menu {
+    padding: 0;
+  }
+  .menu_navegacion {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70%;
+    height: 100vh;
+    left: 0;
+    background: gray;
+    top: 0;
+    text-align: end;
+    transition: all 0.5s;
+    left: -70%;
+  }
+  
+  .cel {
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+
+  i {
+    font-size: 40px;
+    margin-right: 40px;
+  }
+  .menu_navegacion i {
+    padding: 10px;
+    font-size: px;
+  }
+ 
+
+  .cel {
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+
+  .redes{
+    margin: auto;
+  }
+
+
+
+ #menu-cel:checked ~ .menu_navegacion{
+  left: 0;
+ }
+
+
+}

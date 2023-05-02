@@ -48,7 +48,7 @@ i {
   flex-wrap: nowrap;
 }
 
-.menucel{
+.menucel {
   display: none;
 }
 
@@ -65,7 +65,6 @@ i {
   flex-wrap: wrap;
   height: auto;
   width: auto;
-
 }
 
 .imagen {
@@ -100,21 +99,18 @@ a:hover {
   color: rgb(29, 212, 136);
 }
 
-#check-menu{
+#check-menu {
   display: none;
 }
 
 
-@media Screen and (max-width:1190px){
-  .imagen{
-   margin-top: 75px;
+
+
+@media Screen and (max-width: 1190px) {
+  .imagen {
+    margin-top: 75px;
   }
-
 }
-
-
-
-
 
 @media Screen and (max-width: 1034px) {
   .padre {
@@ -126,56 +122,53 @@ a:hover {
     padding: 0px 0px 0px 10px;
   }
 
-  h1{
+  h1 {
     font-size: 40px;
   }
 
-  p{
+  p {
     font-size: 25px;
   }
 }
 
-
-
-
-
-
 @media Screen and (max-width: 792px) {
   .padre {
-   height: 100%;
-   
+    height: 100%;
   }
-  .menu{
+  .menu {
     padding: 0;
   }
-  .menu_navegacion{
+  .menu_navegacion {
     position: fixed;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     justify-content: flex-start;
-    background: gray;
-    width: 60%;
+    align-items: flex-start;
+    width: 70%;
     height: 100vh;
     left: 0;
-    margin-left: -60%;
-    transition: all .5s;
+    background: gray;
+    top: 0;
+    text-align: end;
+    transition: all 0.5s;
+    left: -70%;
   }
 
-  .menu_navegacion i{
+ 
+
+  .menu_navegacion i {
     padding: 10px;
-    font-size: 30px;
+    font-size: px;
   }
  
-  .menucel{
+
+  .menucel {
     display: block;
     color: white;
     cursor: pointer;
-
   }
 
-
-
-  i{
+  i {
     font-size: 40px;
     margin-right: 40px;
   }
@@ -198,19 +191,16 @@ a:hover {
 
   h1 {
     text-align: center;
-    font-size: 60px ;
+    font-size: 60px;
   }
   p {
     text-align: justif;
-    font-size: 40px ;
+    font-size: 40px;
   }
 
+  #check-menu:checked ~ .menu_navegacion {
+    left: 0;
+  }
 
- 
-    
- #check-menu:checked~.menu_navegacion{
-
-  margin: 0;
- }
 
 }

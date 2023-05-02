@@ -73,7 +73,7 @@ i{
   .proyectos{
     margin: 70px 20px 10px 20px;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: stretch;
     height: auto;
@@ -83,6 +83,7 @@ i{
     justify-content: center;
     width: 300px;
     margin: 5px;
+    padding: 10px 0 10px 0;
     background: rgb(0, 0, 0, 0.6) ;
   }
 
@@ -106,4 +107,81 @@ i{
     color: white;
     padding: 25px;
     font-size: 22px;
+  }
+  
+  .cel{
+    display: none;
+  }
+
+  #menu-cel{
+    display: none;
+  }
+  
+  @media (max-width:970px){
+    .padre{
+      height: 100%;
+    }
+  }
+
+  @media (max-width:660px){
+    .proyecto{
+      width: 80%;
+    }
+    .img{
+      margin-left: 170px;
+    }
+  }
+
+  @media Screen and (max-width: 792px) {
+    .padre {
+      height: 100%;
+    }
+    .menu {
+      padding: 0;
+    }
+    .menu_navegacion {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 70%;
+      height: 100vh;
+      left: 0;
+      background: gray;
+      top: 0;
+      text-align: end;
+      transition: all 0.5s;
+      left: -70%;
+    }
+    
+    .cel {
+      display: block;
+      color: white;
+      cursor: pointer;
+    }
+  
+    i {
+      font-size: 40px;
+      margin-right: 40px;
+    }
+    .menu_navegacion i {
+      padding: 10px;
+      font-size: px;
+    }
+   
+  
+    .cel {
+      display: block;
+      color: white;
+      cursor: pointer;
+    }
+  
+
+  
+   #menu-cel:checked ~ .menu_navegacion{
+    left: 0;
+   }
+  
+  
   }
